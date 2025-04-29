@@ -1,6 +1,9 @@
 const express = require('express');
 const axios = require('axios');
+const cors = require('cors');  // Import cors
 const app = express();
+
+app.use(cors());  // Enable CORS for all routes
 app.use(express.json());
 
 const AFFILIATE_TAG = "skoul27-21"; // 🔁 Replace with your affiliate tag
